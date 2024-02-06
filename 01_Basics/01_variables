@@ -1,7 +1,7 @@
 const accountId = 144553;
 let accountEmail = "xyz@google.com";
 var accountPassword = "12345";
-accountCity = "Jaipur";
+accountCity = "Jaipur"; // we can declare a variable like this but it's not recommend.
 let accountState;
 
 // accountId = 2 // Not allowed value re-assigned with a constant variables.
