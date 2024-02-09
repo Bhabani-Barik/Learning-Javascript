@@ -75,3 +75,34 @@ console.log(typeof heros);//object
 https://262.ecma-international.org/5.1/#sec-11.4.3
 
 */
+
+
+/********************* MEMORY ******************************/
+
+/* 
+    There is two types of memory. i.e- 
+        1. Stack Memory ( Used in all Premitive data types)(Pass value as a copy mean when we change something i.e- with the copy statement or value , not on the original )
+
+        2. Heap Memory ( Used in all Non-Primitive data types)(Pass value as a reference, mean when we change something i.e- with the original statement or value )
+
+*/
+
+let myLaptopname = "DELL";
+
+let anotherName = "MacBook";
+
+console.log(myLaptopname);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "xyz@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
