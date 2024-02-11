@@ -55,3 +55,10 @@ newDate.toLocaleString('default', {
 
 
 //Note: Shortcut - 'ctrl + spacebar' : suggestion
+/*
+For  Reference : 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+https://tc39.es/proposal-temporal/docs/index.html
+
+*/
