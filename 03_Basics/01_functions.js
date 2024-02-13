@@ -83,6 +83,7 @@ function loginUserMessage(username){
 }
 console.log(loginUserMessage()); */
 
+
 function loginUserMessage(username = "sam"){
     if(!username){
         console.log("Please enter a username: ");
@@ -90,5 +91,60 @@ function loginUserMessage(username = "sam"){
     }
     return `${username} just logged in`;
 }
-console.log(loginUserMessage("Bhabani")); //Value over-ride
-console.log(loginUserMessage());//By-default value 
+// console.log(loginUserMessage("Bhabani")); //Value over-ride
+// console.log(loginUserMessage());//By-default value 
+
+
+
+
+/********* Functions With Objects *************/
+
+// function calculateCartPrice(num1){
+//     return num1;
+// }
+// console.log(calculateCartPrice(2)); //2
+
+
+// function calculateCartPrice(num1){
+//     return num1;
+// }
+// console.log(calculateCartPrice(200, 400, 500));//200
+
+//Note : rest operator and spread operator are same but meaning different at different case
+
+// function calculateCartPrice(...num1){
+//     return num1;
+// }
+// console.log(calculateCartPrice(200, 400 , 100, 300,30000));//it return value in array format 
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1;
+}
+console.log(calculateCartPrice(200, 400, 600, 1000, 40000));
+
+// Function with Object pass as an argument 
+const user = {
+    username: "tom",
+    price: 200
+    // prices: 200 // undefined
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+    // console.log(`Username is ${anyobject.username} and price is ${anyobject.prices}`);
+}
+// handleObject(user);
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+// function with object pass as an array
+
+const myNewArrray = [200, 400, 100, 600];
+
+function returnSecondValue(getArray){
+    return getArray[1];
+}
+// console.log(returnSecondValue(myNewArrray));//400
+console.log(returnSecondValue([200, 400, 500, 1000]));//400
