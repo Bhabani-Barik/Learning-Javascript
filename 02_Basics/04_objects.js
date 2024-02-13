@@ -67,7 +67,7 @@ const users = [
         email: "xyz@gmail.com"
      },
 ];
-
+/*
 console.log(users[1].email);
 console.log(tinderUser);
 
@@ -76,7 +76,38 @@ console.log(Object.values(tinderUser));
 console.log(Object.entries(tinderUser));
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); //true
-console.log(tinderUser.hasOwnProperty('isLogged')); //false
+console.log(tinderUser.hasOwnProperty('isLogged')); //false */
+
+const course = {
+   coursename: "javascript",
+   price: "549",
+   courseInstructor: "Mark"
+}
+
+// console.log(course.courseInstructor);
+
+/*
+const {courseInstructor} = course
+console.log(courseInstructor); */
+
+/* Destructuring of Object
+const {courseInstructor: instructor} = course
+console.log(instructor); */
+
+/* API response in json(Javascript object notation) format
+example: 
+{
+   "name": "mark",
+   "coursename": "Javascript",
+   "price":
+} 
+
+Note : API also response in array . ex: [{}, {}, {}]
+
+*/
+
+
+
 
 
 
