@@ -74,13 +74,16 @@ if(true) {
 
 // console.log(addone(5));
 
-function addone(num){
+function addone(num){  // it's simply declare a function
     return num + 1;
 }
 
 // addone(5); 
+console.log(addone(5));
 
-const addTwo = function(num){
+
+// addTwo(5); // error
+const addTwo = function(num){ // it's also declare a function but it give reference to a variable or (declare a function and hold with a variable)
     return num + 2;
 }
 
