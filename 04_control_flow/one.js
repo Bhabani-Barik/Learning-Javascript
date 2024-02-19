@@ -59,7 +59,7 @@ if (balance < 500) {
     console.log("less than 1200");
 }  */
 
-
+// Logical Operator
 const userLoggedIn = true;
 const debitCard = true;
 const loggedInFromGoogle = false;
