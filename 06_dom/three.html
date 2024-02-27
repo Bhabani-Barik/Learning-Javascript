@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const div = document.createElement('div');
+    console.log(div);
+    div.className = "main";
+    // div.id = "myId";
+    div.id = Math.round(Math.random() * 10 + 1)
+    
+    // custom attribute
+    div.setAttribute("title", "generated title");
+    div.style.backgroundColor = "green";
+    div.style.padding = "12px";
+    // div.innerText = "Youtube"; 
+    const addText = document.createTextNode("YouTube");
+    div.appendChild(addText);
+    document.body.appendChild(div);
+
+    /** 
+     Note: 
+        -Document traverse
+        -Behind scene detail
+        -Select
+        -Generate
+    -We can wrap with a function to create a new div using custom attribute and pass argument as user's input text and background color.
+    
+    -Create a loop and continue for 5 times using custom set attribute and using 5 different backgroundcolor array and diffrent text array
+     */
+
+</script>
+</html>
