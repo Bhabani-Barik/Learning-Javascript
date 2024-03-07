@@ -6,7 +6,29 @@
     <title>Events</title>
 </head>
 <body>
-    <h1>Chai aur code</h1>
-    <button id="stop"></button>
+    <h1>Async Js</h1>
+    <button id="stop">Stop</button>
 </body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Bhabani");
+    // }, 2000);
+
+
+    //reference 
+    const sayBhabani = function(){
+        console.log("Hello Bhabani");
+    };
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "Asynchronous Javascript"
+    };
+
+    const changeMe = setTimeout(changeText, 2000);
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe);
+        console.log("STOPPED");
+    });
+</script>
 </html>
