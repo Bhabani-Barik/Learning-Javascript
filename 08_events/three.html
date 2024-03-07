@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Async Js</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // setInterval(function(){
+    //     console.log("Bhabani", Date.now());
+    // }, 1000);
+
+    const sayDate = function(str){
+        console.log(str,"Bhabani",Date.now());
+    };
+
+    let intervalId;
+
+    const startDisplay = function(){
+        if (!intervalId){
+        console.log("Starting soon.....")
+        intervalId = setInterval(sayDate, 1000);
+        }
+    }    
+    
+
+    const stopDisplay = function(){
+        console.log("Stopped");
+        clearInterval(intervalId);
+        intervalId = null; 
+
+    }
+    
+    document.querySelector('#start').addEventListener('click', startDisplay);
+
+    document.querySelector('#stop').addEventListener('click', stopDisplay);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+   
+    // document.querySelector('#start').addEventListener('click', function(){
+    //     console.log("STARTED");
+    //     // setInterval(sayDate,2000,"Hey");
+
+    // });
+    
+    // const intervalId = setInterval(sayDate, 1000, "Hi");
+
+    // document.querySelector('#stop').addEventListener('click', function(){
+    //     clearInterval(intervalId);
+    //     console.log("STOPPED");
+    // });
+</script>
+</html>
