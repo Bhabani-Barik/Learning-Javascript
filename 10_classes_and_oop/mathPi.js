@@ -1,0 +1,53 @@
+const descriptor = Object.getOwnPropertyDescriptor(Math, "PI");
+
+console.log(descriptor);
+
+// console.log(Math.PI);
+// Math.PI = 5;
+// console.log(Math.PI);
+
+//Another way of Object creation
+// const mynewObject = Object.create(null);
+
+const chai = {
+    name: 'ginger chai',
+    price: 250,
+    isAvilable: true,
+
+    orderChai: function(){
+        console.log("Code Photgeya or chai nhi bani");
+    }
+}
+
+
+console.log(chai);
+console.log(Object.getOwnPropertyDescriptor(chai))//object
+console.log(Object.getOwnPropertyDescriptor(chai, "name")); //object and object's property
+
+
+// Object's property define
+
+Object.defineProperty(chai, 'name', {
+    // writable: false,
+    // enumerable:false,
+    enumerable:true,
+    // configurable: false,
+    // iteratable: false,
+});
+
+// console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+
+
+// for (let[key, value] of chai) {
+//     console.log(`${key} : ${value}`);
+    
+// }
+
+for (let[key, value] of Object.entries(chai)) {
+    if(typeof value !== 'function'){
+        console.log(`${key} : ${value}`);
+    }
+
+    // console.log(`${key} : ${value}`);
+    
+}
