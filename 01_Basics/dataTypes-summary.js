@@ -89,7 +89,8 @@ https://262.ecma-international.org/5.1/#sec-11.4.3
 
 let myLaptopname = "DELL";
 
-let anotherName = "MacBook";
+let anotherName = myLaptopname;
+anotherName = "MacBook";
 
 console.log(myLaptopname);
 console.log(anotherName);
